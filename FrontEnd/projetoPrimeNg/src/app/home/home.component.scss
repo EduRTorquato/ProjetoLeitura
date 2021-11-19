@@ -1,0 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+h2{
+    font-family: 'Rubik', sans-serif;
+    color:rgb(24, 148, 24)
+}
+
+label{
+    font-family: 'Rubik', sans-serif;
+}
+
+.txta{
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.p1{
+  font-family: 'Anton', sans-serif;
+  color: rgb(71, 126, 243);
+}
+
+.swal2-modal .swal2-title {
+  font-family: 'Rubik', sans-serif;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.center-div {
+  width: 30%;
+  margin: 0 auto;
+}

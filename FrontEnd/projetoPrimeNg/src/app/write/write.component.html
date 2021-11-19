@@ -1,0 +1,53 @@
+<body>
+<header>
+
+    <div class="row">
+    <div class="col-12">
+        <button routerLink='/home' pButton type="button" class=" ml-5 mt-3 p-2 p-button-raised p-button-rounded" icon=" pi pi-chevron-left"></button>
+
+        <H1 class="flex justify-content-center p-0">NOS MANDE SEU TEXTO</H1>
+
+</div>
+</div>
+
+</header>
+
+<section class="flex mb-3 justify-content-center">
+    <div class="row">
+        <p>Escreva aqui: </p>
+        <span class="p-float-label">
+          <input id="float-input" type="text" pInputText placeholder="nome do livro" [(ngModel)]="livro.nome" >
+          <br>
+          <br>
+          <!-- <input id="float-input" type="text" pInputText placeholder="nome do autor">
+          <br>
+          <br> -->
+          <p-inputMask placeholder="Data de início" mask="99-99-9999" [(ngModel)]="livro.dataInicioLeitura"></p-inputMask>
+          <br>
+          <br>
+          <p-inputMask placeholder="Data final" mask="99-99-9999"  [(ngModel)]="livro.dataFinalLeitura"></p-inputMask>
+          <br>
+          <br>
+          <p-inputNumber [(ngModel)]="livro.numPag" mode="decimal" placeholder="Número de páginas"></p-inputNumber>
+          <br>
+          <br>
+
+
+          <textarea pInputTextarea placeholder="Opinião" [(ngModel)]="livro.resenha"></textarea>
+
+
+      </span>
+    </div>
+
+</section>
+<div class="flex justify-content-center p-3">
+    <button  pButton routerLink="/home" type="button" label="Send" class="p-button-light btn" (click)="postMessage()" ></button>
+
+</div>
+
+
+
+<footer class="p-1 text">
+    <h2 class="mt-3">OurHistory</h2>
+</footer>
+</body>

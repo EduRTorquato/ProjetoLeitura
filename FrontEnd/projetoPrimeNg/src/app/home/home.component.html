@@ -1,0 +1,54 @@
+
+<form class="">
+
+    <div class="col-12 flex mb-2 ml-4">
+        <h2>OurHistoy</h2>
+    </div>
+
+<section class="surface-200 flex justify-content-center">
+
+
+<div class="grid flex col-6 mt-3">
+    <div class="card flex align-items-center mr-3 ">
+
+<p-tabView [scrollable]="true" scrollWidth="" class="p-tabview-panel" styleClass="center-div">
+    <p-tabPanel header={{livros.nome}} *ngFor="let livros of livrosArray">
+
+      <h1> Título: {{ livros.nome }}</h1>
+      <hr>
+      <p>Opinião: {{ livros.resenha }}</p>
+      <p>Data de início leitura: {{ livros.dataInicioLeitura }}</p>
+      <p>Data final: {{ livros.dataFinalLeitura }} </p>
+
+      <button pButton type="button" class="p-button-danger" label="DELETE" (click)="mostraLivro(livros.livroId)" icon="pi pi-trash"></button>
+
+    </p-tabPanel>
+
+</p-tabView>
+
+
+
+
+
+    </div>
+</div>
+</section>
+
+
+
+<div class="p-2 flex justify-content-center bg-light">
+  <button pButton type="button" class="p p-button-help" routerLink='/write' label="Mande sua própria história!" icon="pi pi-send"></button>
+</div>
+
+
+
+
+</form>
+
+
+
+<div class="bg-green-200 flex justify-content-center mb-0 footer">
+
+<h2>OurHistoy</h2><br>
+
+</div>
